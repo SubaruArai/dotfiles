@@ -3,6 +3,9 @@ export TERM=xterm-256color
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
 
+# python pip bin
+export PATH="$HOME/.local/bin:${PATH}"
+
 # perl plenv
 # export PATH="$HOME/.plenv/bin:$PATH"
 # eval "$(plenv init -)"
@@ -16,5 +19,14 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
+# default editor as vim
 export EDITOR=/usr/bin/vim
 
+# python don't generate *.pyc and *.pyo
+export PYTHONDONTWRITEBYTECODE=1
+
+# gtags use pygments
+export GTAGSLABEL=pygments
+
+# export raspberry pi pico sdk path
+export PICO_SDK_PATH="/home/nviditor/projects/pico-sdk"

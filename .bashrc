@@ -131,3 +131,15 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# ros stuff
+source /opt/ros/kinetic/setup.bash
+source ~/catkin_ws/devel/setup.bash
+
+# set PATH to include tex install path
+PATH="/usr/local/texlive/2020/bin/x86_64-linux:$PATH"
+MANPATH="/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH"
+INFOPATH="/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH"
+
+# python bin path
+PATH="/home/nviditor/.local/bin:$PATH"
