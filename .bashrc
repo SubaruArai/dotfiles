@@ -121,6 +121,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Export definitions.
+if [ -f ~/.bash_exports ]; then
+    . ~/.bash_exports
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -133,13 +138,9 @@ if ! shopt -oq posix; then
 fi
 
 # ros stuff
-source /opt/ros/kinetic/setup.bash
+source /opt/ros/noetic/setup.bash
 source ~/catkin_ws/devel/setup.bash
-
-# set PATH to include tex install path
-PATH="/usr/local/texlive/2020/bin/x86_64-linux:$PATH"
-MANPATH="/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH"
-INFOPATH="/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH"
 
 # python bin path
 PATH="/home/nviditor/.local/bin:$PATH"
+source /home/nviditor/catkin_ws/devel/setup.bash

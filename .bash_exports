@@ -20,7 +20,8 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 # default editor as vim
-export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim
+export EDITOR="$VISUAL"
 
 # python don't generate *.pyc and *.pyo
 export PYTHONDONTWRITEBYTECODE=1
@@ -28,5 +29,3 @@ export PYTHONDONTWRITEBYTECODE=1
 # gtags use pygments
 export GTAGSLABEL=pygments
 
-# export raspberry pi pico sdk path
-export PICO_SDK_PATH="/home/nviditor/projects/pico-sdk"
