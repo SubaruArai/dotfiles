@@ -143,4 +143,4 @@ source ~/catkin_ws/devel/setup.bash
 
 # python bin path
 PATH="/home/nviditor/.local/bin:$PATH"
-source /home/nviditor/catkin_ws/devel/setup.bash
+
